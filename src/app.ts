@@ -243,9 +243,7 @@ async function sendReply(threadId: string, messageId: string) {
         console.error("Error sending reply:", error);
     }
 }
-setInterval(checkNewMails, 5000);
-
-/**Math.floor(Math.random() * (120000 - 45000 + 1)) + 45000 */
+setInterval(checkNewMails, Math.floor(Math.random() * (120000 - 45000 + 1)) + 45000);
 
 const PORT = 3000;
 app.listen(PORT, () => {
